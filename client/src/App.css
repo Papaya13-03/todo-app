@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.root {
+    position: relative;
+}
+
+.container {
+    width: 500px;
+    height: 800px;
+}
+
+.header {
+    width: 100%;
+    height: 80px;
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 50px;
+}
+
+.add-form {
+    position: relative;
+    display: flex;
+    height: 50px;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.input-add_task {
+    position: relative;
+    top: 0;
+    height: 50px;
+    width: 80%;
+    outline: none;
+    padding-left: 10px;
+    font-size: 20px;
+    border: 1px solid #000;
+}
+
+.btn-submit {
+    position: relative;
+    top: 0px;
+    height: 50px;
+    width: 20%;
+    cursor: pointer;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    font-size: 20px;
+    line-height: 100%;
+}
+
+.task {
+    margin-top: 10px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    background-color: #000000;
+    color: #fff;
+    padding: 0 10px 0 10px;
+}
+
+.check-btn {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    cursor:pointer;
+}
+.check-btn:checked {
+    /* border: 1px solid #000000; */
+    accent-color: #000000;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    cursor:pointer;
+}
+
+.check-btn:checked~.text {
+    text-decoration: line-through;
+}
+
+.text {
+    flex-grow: 1;
+    font-size: 20px;
+    font-weight: 100;
+    margin-left: 15px;
+}
+
+.delete-btn {
+    width: 30px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.wrap {
+    text-align: center;
+    width: 500px;
+    height: 800px;
+}
+
+.wrap h1 {
+    font-size: 50px;
+}
+
+.auth_form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+.auth_form input {
+    width: 100%;
+    height: 50px;
+    font-size: 20px;
+    padding: 0 10px 0 10px;
+    outline: none;
+    margin-top: 20px;
+}
+
+.auth_form input[type="submit"] {
+    background: #000;
+    color: #fff;
+
+}
+
+.logout-btn {
+    position: absolute;
+    width: 80px;
+    height: 30px;
+    background-color: #000;
+    color: #fff;
+    bottom: 20px;
+    right: 20px;
+    cursor: pointer;
+}
