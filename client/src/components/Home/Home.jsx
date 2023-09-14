@@ -20,7 +20,6 @@ const Home = () => {
       console.log("redirect!");
       window.location.href = "/login";
     }
-
     const options = {
       method: "GET",
       headers: {

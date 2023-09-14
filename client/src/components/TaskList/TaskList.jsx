@@ -3,11 +3,11 @@ import { TasksContext } from "../Home/Home";
 import Task from "../Task/Task";
 
 const TaskList = () => {
-  const {tasks, setTasks} = useContext(TasksContext);
+  const { tasks } = useContext(TasksContext);
   return (
     <div className="task-list">
       {tasks.map((task) => {
-        return <Task key={task._id} task={task}/>;
+        return <Task key={task._id} task={task} />;
       })}
     </div>
   );
